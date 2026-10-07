@@ -68,6 +68,24 @@
       "posterSmall": "assets/posters/lycees-small.webp",
       "captions": "media/lycees.vtt",
       "sources": "sources/lycees.html"
+    },
+    {
+      "id": "brainrot-tv-promo",
+      "title": "Ton cerveau mérite mieux.",
+      "category": "Le spot BRAINROT TV",
+      "color": "#9d82ff",
+      "teaser": "14 secondes pour entrer dans le club des cerveaux curieux.",
+      "description": "La bande-annonce de BRAINROT TV : les quatre premiers films, le répertoire et une seule invitation — appuie sur play.",
+      "posterAlt": "BRAINROT TV sur fond violet, avec le bouton Appuie sur play en jaune citron.",
+      "duration": 14,
+      "durationLabel": "0:14",
+      "dateLabel": "7 octobre 2026",
+      "video": "media/brainrot-tv-promo.mp4",
+      "poster": "assets/posters/brainrot-tv-promo.webp",
+      "posterSmall": "assets/posters/brainrot-tv-promo-small.webp",
+      "captions": "media/brainrot-tv-promo.vtt",
+      "sources": "sources/brainrot-tv-promo.html",
+      "format": "SPOT VERTICAL"
     }
   ]
 }

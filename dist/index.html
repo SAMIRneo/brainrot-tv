@@ -2,36 +2,37 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f4efdf">
+  <meta name="theme-color" content="#19191d">
   <title>BRAINROT TV — Un peu plus smart, un peu moins sage.</title>
   <meta name="description" content="IA, blockchain, outils et actualité : nos films courts, nos grandes questions et une dose d’autodérision. La vidéothèque BRAINROT TV.">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/space.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="upgrade.css"><script src="app.js" defer></script>
+  <link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#films">Passer aux vidéos</a>
   <header class="topbar wrap">
-    <a class="brand" href="./" aria-label="BRAINROT TV, accueil">BRAINROT<span class="brand-tv">TV</span><span class="brand-dot" aria-hidden="true">✳</span></a>
-    <a class="nav-link" href="#films">Le répertoire <span aria-hidden="true">↘</span></a>
+    <a class="brand" href="./" aria-label="BRAINROT TV, accueil">BRAINROT<span class="brand-tv">TV</span></a>
+    <span class="header-note">DE LA CURIOSITÉ À L’ÉCRAN.</span>
+    <a class="nav-link" href="#films">Les vidéos <span id="header-count">05</span></a>
   </header>
   <main class="wrap">
     <section class="intro" aria-labelledby="intro-title">
-      <div class="intro-copy"><p class="eyebrow">LE CLUB DES CERVEAUX CURIEUX.</p><h1 id="intro-title">DU FOND.<br><span class="outline">DU FUN.</span><br><span class="squiggle">DU FILM.</span></h1><p class="lede">IA, tech, outils & actualité.<br>Des films courts. Des idées qui restent.</p><a class="browse-button" href="#films">Explorer les vidéos <span id="hero-count">05</span></a><p class="intro-footnote">Un peu plus smart. Un peu moins sage.</p></div>
-      <div class="promo-feature"><div class="promo-heading"><span class="promo-label">LE SPOT</span><span>14 S · SON ACTIVÉ AU PLAY</span></div><button id="watch-promo" class="promo-poster" data-video-id="brainrot-tv-promo" aria-label="Regarder le spot BRAINROT TV de 14 secondes" disabled><img src="assets/posters/brainrot-tv-promo.webp" width="720" height="1280" alt="BRAINROT TV : appuie sur play" fetchpriority="high"><span class="promo-play" aria-hidden="true">▶</span><span class="promo-duration">0:14</span></button><p class="promo-caption">Ton cerveau mérite une meilleure playlist.</p></div>
+      <div class="intro-copy"><p class="eyebrow">LE CLUB DES CERVEAUX CURIEUX / VOL. 01</p><h1 id="intro-title">DU FOND.<br><span class="outline">DU FUN.</span> <span class="squiggle">DU FILM.</span></h1><p class="lede">IA, tech, outils & actualité.<br>Des films courts. Des idées qui restent.</p><a class="browse-button" href="#films">Trouve ton prochain déclic <span id="hero-count">05</span></a></div>
+      <div class="promo-feature"><span class="promo-label">LA BANDE-ANNONCE</span><a id="watch-promo" class="promo-poster" data-video-id="brainrot-tv-promo" href="media/brainrot-tv-promo.mp4" aria-label="Regarder le spot BRAINROT TV de 14 secondes"><div class="promo-art" aria-hidden="true"><span class="orbit"></span><span class="promo-word">BRAIN<br>ROT<span>TV.</span></span><span class="promo-spark">✳</span></div><span class="promo-bottom"><span>Le manifeste.<small>14 secondes pour se rencontrer.</small></span><span class="promo-play" aria-hidden="true">▶</span></span></a></div>
+      <div class="intro-bottom"><span>UN PEU PLUS SMART. UN PEU MOINS SAGE.</span><span>5 VIDÉOS / 0 PRISE DE TÊTE</span></div>
     </section>
-    <div class="topic-rail" aria-label="Les sujets de la vidéothèque"><span>IA</span><b aria-hidden="true">✳</b><span>OUTILS</span><b aria-hidden="true">✳</b><span>TECH</span><b aria-hidden="true">✳</b><span>LE MONDE</span><b aria-hidden="true">↘</b></div>
     <section id="films" class="library" aria-labelledby="library-title">
-      <div class="section-bar"><h2 id="library-title">À l’affiche <span id="film-count" class="count">05</span></h2><p id="library-stats">5 vidéos · 5 min 35 de curiosité</p></div>
-      <div id="video-grid" class="video-grid" aria-live="polite"></div>
+      <div class="section-bar"><div><p class="section-kicker">CHOISIS TON DÉCLIC</p><h2 id="library-title">La collection<span id="film-count" class="count">05</span></h2></div><p id="library-stats">5 vidéos · 5 min 35 de curiosité</p></div>
+      <div id="video-grid" class="video-grid" aria-live="polite" aria-busy="true"><p class="catalog-loading">Les films arrivent…</p></div>
       <noscript><p>Active JavaScript pour le lecteur intégré, ou regarde directement nos films :</p><ul><li><a href="media/agents-ia.mp4">Agents IA</a></li><li><a href="media/hermes.mp4">Hermes</a></li><li><a href="media/blockchain.mp4">Blockchain</a></li><li><a href="media/lycees.mp4">Lycées</a></li><li><a href="media/brainrot-tv-promo.mp4">Le spot BRAINROT TV</a></li></ul></noscript>
     </section>
-    <aside class="collection-note"><span class="asterisk" aria-hidden="true">✳</span><p><strong>La collection est vivante.</strong><br>De nouveaux films arrivent ici. La curiosité, elle, n’a pas de générique de fin.</p><span class="note-arrow" aria-hidden="true">↗</span></aside>
+    <aside class="collection-note"><span class="asterisk" aria-hidden="true">✳</span><p><span class="section-kicker">À SUIVRE</span><strong>La curiosité n’a pas de générique de fin.</strong><span>La collection grandit. Reviens pour le prochain déclic.</span></p><span class="note-stamp" aria-hidden="true">STAY<br>CURIOUS.</span></aside>
   </main>
   <footer class="wrap footer"><a class="brand footer-brand" href="./">BRAINROT<span class="brand-tv">TV</span></a><p>Fait avec des idées, de l’IA<br>et un minimum de dignité.</p><span class="footer-meta">LA VIDÉOTHÈQUE DE SAMIR / 2026</span></footer>
   <dialog id="player-dialog" aria-labelledby="player-title">
-    <div class="dialog-top"><span class="dialog-brand">BRAINROT TV / EN LECTURE</span><button id="close-player" class="close-button" aria-label="Fermer la vidéo">✕</button></div>
-    <div class="player-layout"><div class="screen"><video id="player" controls playsinline preload="none" aria-label="Lecteur vidéo"><track id="caption-track" kind="subtitles" srclang="fr" label="Français"></video><p id="player-error" class="player-error" hidden>La vidéo ne se charge pas. Tu peux utiliser le lien MP4 ci-dessous.</p></div><div class="player-info"><span id="player-category" class="category"></span><h2 id="player-title"></h2><p id="player-meta" class="player-meta"></p><p id="player-description"></p><div class="player-actions"><a id="download-video" class="button-link" download>Télécharger le MP4 <span aria-hidden="true">↗</span></a><a id="read-sources" class="source-link" target="_blank" rel="noopener">Les sources & la méthode ↗</a></div><p id="player-date-note" class="date-note" hidden>Un point daté au 7 octobre 2026. L’actualité évolue : consulte les sources pour remettre les événements dans leur contexte.</p><p class="player-small">Format vertical · Full HD · Voix française</p></div></div>
+    <div class="dialog-top"><span class="dialog-brand">BRAINROT TV / SALLE DE PROJECTION</span><button id="close-player" class="close-button" aria-label="Fermer la vidéo">✕</button></div>
+    <div class="player-layout"><div class="screen"><video id="player" controls playsinline preload="none" aria-label="Lecteur vidéo"><track id="caption-track" kind="subtitles" srclang="fr" label="Français"></video><p id="player-error" class="player-error" hidden>La vidéo ne se charge pas. Tu peux utiliser le lien MP4 ci-dessous.</p></div><div class="player-info"><p class="player-index" id="player-index"></p><span id="player-category" class="category"></span><h2 id="player-title"></h2><p id="player-meta" class="player-meta"></p><p id="player-description"></p><div class="player-actions"><a id="download-video" class="button-link" download>Télécharger le MP4</a><a id="read-sources" class="source-link" target="_blank" rel="noopener">Sources & réalisation</a></div><p id="player-date-note" class="date-note" hidden>Un point daté au 7 octobre 2026. L’actualité évolue : consulte les sources pour remettre les événements dans leur contexte.</p><p class="player-small">Vertical · Full HD · Voix française</p><button id="next-film" class="next-film"><span>À SUIVRE</span><strong id="next-film-title"></strong><span class="next-play" aria-hidden="true">▶</span></button></div></div>
   </dialog>
 </body>
 </html>

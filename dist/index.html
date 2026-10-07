@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4efdf">
+  <title>BRAINROT TV — Un peu plus smart, un peu moins sage.</title>
+  <meta name="description" content="IA, blockchain, outils et actualité : nos films courts, nos grandes questions et une dose d’autodérision. La vidéothèque BRAINROT TV.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/space.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#films">Passer aux vidéos</a>
+  <header class="topbar wrap">
+    <a class="brand" href="./" aria-label="BRAINROT TV, accueil">BRAINROT<span class="brand-tv">TV</span><span class="brand-dot" aria-hidden="true">✳</span></a>
+    <a class="nav-link" href="#films">Le répertoire <span aria-hidden="true">↘</span></a>
+  </header>
+  <main class="wrap">
+    <section class="intro" aria-labelledby="intro-title">
+      <div><p class="eyebrow"><span class="live-dot"></span> LA CURIOSITÉ A SA CHAÎNE.</p><h1 id="intro-title">Du fond.<br class="mobile-break"> <span class="outline">Du fun.</span> <span class="squiggle">Du film.</span></h1><p class="lede">Des sujets sérieux. Un cerveau pas toujours sage.<br>Nos vidéos pour comprendre sans piquer du nez.</p></div>
+      <div class="sticker" aria-label="100 pour cent curiosité"><span>100%</span><small>CURIOSITÉ</small><i aria-hidden="true">✳</i></div>
+    </section>
+    <section id="films" class="library" aria-labelledby="library-title">
+      <div class="section-bar"><h2 id="library-title">À l’affiche <span id="film-count" class="count">04</span></h2><p id="library-stats">4 films · 5 min 21 de curiosité</p></div>
+      <div id="video-grid" class="video-grid" aria-live="polite"></div>
+      <noscript><p>Active JavaScript pour le lecteur intégré, ou regarde directement nos films :</p><ul><li><a href="media/agents-ia.mp4">Agents IA</a></li><li><a href="media/hermes.mp4">Hermes</a></li><li><a href="media/blockchain.mp4">Blockchain</a></li><li><a href="media/lycees.mp4">Lycées</a></li></ul></noscript>
+    </section>
+    <aside class="collection-note"><span class="asterisk" aria-hidden="true">✳</span><p><strong>La collection est vivante.</strong><br>De nouveaux films arrivent ici. La curiosité, elle, n’a pas de générique de fin.</p><span class="note-arrow" aria-hidden="true">↗</span></aside>
+  </main>
+  <footer class="wrap footer"><a class="brand footer-brand" href="./">BRAINROT<span class="brand-tv">TV</span></a><p>Fait avec des idées, de l’IA<br>et un minimum de dignité.</p><span class="footer-meta">LA VIDÉOTHÈQUE DE SAMIR / 2026</span></footer>
+  <dialog id="player-dialog" aria-labelledby="player-title">
+    <div class="dialog-top"><span class="dialog-brand">BRAINROT TV / EN LECTURE</span><button id="close-player" class="close-button" aria-label="Fermer la vidéo">✕</button></div>
+    <div class="player-layout"><div class="screen"><video id="player" controls playsinline preload="none" aria-label="Lecteur vidéo"><track id="caption-track" kind="subtitles" srclang="fr" label="Français"></video><p id="player-error" class="player-error" hidden>La vidéo ne se charge pas. Tu peux utiliser le lien MP4 ci-dessous.</p></div><div class="player-info"><span id="player-category" class="category"></span><h2 id="player-title"></h2><p id="player-meta" class="player-meta"></p><p id="player-description"></p><div class="player-actions"><a id="download-video" class="button-link" download>Télécharger le MP4 <span aria-hidden="true">↗</span></a><a id="read-sources" class="source-link" target="_blank" rel="noopener">Les sources & la méthode ↗</a></div><p id="player-date-note" class="date-note" hidden>Un point daté au 7 octobre 2026. L’actualité évolue : consulte les sources pour remettre les événements dans leur contexte.</p><p class="player-small">Format vertical · Full HD · Voix française</p></div></div>
+  </dialog>
+</body>
+</html>

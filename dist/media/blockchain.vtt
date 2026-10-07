@@ -1,0 +1,197 @@
+WEBVTT
+
+1
+00:00:00.056 --> 00:00:00.926
+Et si un historique pouvait
+
+2
+00:00:00.926 --> 00:00:02.991
+être partagé vérifié et très
+
+3
+00:00:02.991 --> 00:00:04.721
+difficile à falsifier Bienvenue
+
+4
+00:00:04.721 --> 00:00:06.261
+dans la blockchain la confiance
+
+5
+00:00:06.261 --> 00:00:07.268
+devient vérifiable
+
+6
+00:00:07.564 --> 00:00:08.983
+Imaginez un registre numérique
+
+7
+00:00:08.983 --> 00:00:10.052
+dont plusieurs ordinateurs
+
+8
+00:00:10.052 --> 00:00:11.522
+conservent une copie Sur une
+
+9
+00:00:11.522 --> 00:00:13.053
+blockchain des transactions sont
+
+10
+00:00:13.053 --> 00:00:14.720
+regroupées en blocs Ces blocs
+
+11
+00:00:14.720 --> 00:00:16.072
+forment un historique partagé
+
+12
+00:00:16.362 --> 00:00:17.692
+Une transaction est signée avec
+
+13
+00:00:17.692 --> 00:00:19.066
+une clé privée Le réseau
+
+14
+00:00:19.066 --> 00:00:20.179
+vérifie sa signature et les
+
+15
+00:00:20.179 --> 00:00:22.051
+règles applicables Une signature
+
+16
+00:00:22.051 --> 00:00:23.358
+prouve une autorisation pas
+
+17
+00:00:23.358 --> 00:00:24.676
+l’identité réelle de quelqu’un
+
+18
+00:00:24.964 --> 00:00:26.338
+Chaque bloc référence l’empreinte
+
+19
+00:00:26.338 --> 00:00:27.993
+cryptographique du précédent son
+
+20
+00:00:27.993 --> 00:00:29.921
+hash Changez une donnée et
+
+21
+00:00:29.921 --> 00:00:31.429
+l’empreinte change Les liens
+
+22
+00:00:31.429 --> 00:00:32.307
+permettent de détecter une
+
+23
+00:00:32.307 --> 00:00:33.682
+modification de l’historique
+
+24
+00:00:33.987 --> 00:00:35.206
+Pour s’accorder sur l’historique
+
+25
+00:00:35.427 --> 00:00:36.992
+le réseau utilise un consensus
+
+26
+00:00:37.224 --> 00:00:38.262
+Bitcoin emploie la preuve de
+
+27
+00:00:38.262 --> 00:00:40.237
+travail Ethereum la preuve
+
+28
+00:00:40.237 --> 00:00:42.242
+d’enjeu Des mécanismes différents
+
+29
+00:00:42.408 --> 00:00:43.492
+avec leurs propres règles
+
+30
+00:00:43.781 --> 00:00:44.851
+Falsifier un vieux bloc ne
+
+31
+00:00:44.851 --> 00:00:46.101
+suffit donc pas il faut
+
+32
+00:00:46.101 --> 00:00:47.081
+aussi affronter les liens et
+
+33
+00:00:47.081 --> 00:00:48.316
+les règles du réseau La
+
+34
+00:00:48.316 --> 00:00:49.701
+sécurité dépend du protocole et
+
+35
+00:00:49.701 --> 00:00:50.637
+de ses participants
+
+36
+00:00:50.927 --> 00:00:52.166
+Et le potentiel dépasse les
+
+37
+00:00:52.166 --> 00:00:53.505
+cryptomonnaies Certaines
+
+38
+00:00:53.505 --> 00:00:54.632
+blockchains exécutent des smart
+
+39
+00:00:54.632 --> 00:00:56.038
+contracts des programmes qui
+
+40
+00:00:56.038 --> 00:00:57.553
+appliquent des règles Paiements
+
+41
+00:00:57.651 --> 00:00:59.816
+certificats traçabilité plusieurs
+
+42
+00:00:59.816 --> 00:01:01.046
+usages deviennent possibles
+
+43
+00:01:01.334 --> 00:01:02.368
+Mais une blockchain ne garantit
+
+44
+00:01:02.368 --> 00:01:03.140
+pas qu’une donnée du monde
+
+45
+00:01:03.140 --> 00:01:04.472
+réel soit vraie Elle peut
+
+46
+00:01:04.472 --> 00:01:06.030
+avoir des frais des limites
+
+47
+00:01:06.132 --> 00:01:07.877
+des bugs Son idée forte
+
+48
+00:01:08.025 --> 00:01:09.275
+partager un historique et pouvoir
+
+49
+00:01:09.275 --> 00:01:09.968
+le vérifier

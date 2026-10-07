@@ -1,0 +1,73 @@
+{
+  "videos": [
+    {
+      "id": "agents-ia",
+      "title": "Les agents IA, sans le blabla.",
+      "category": "Intelligence artificielle",
+      "color": "#a996ff",
+      "teaser": "Skills, MCP, autonomie : ce qu’un agent peut vraiment faire.",
+      "description": "Un agent IA peut planifier une mission, utiliser des outils et exécuter des tâches. Skills, MCP, rôle du contrôle humain : un film pour comprendre son potentiel concret et ses limites.",
+      "posterAlt": "Affiche du film sur les agents IA, graphiques et typographie animée.",
+      "duration": 64.6,
+      "durationLabel": "1:05",
+      "dateLabel": "7 octobre 2026",
+      "video": "media/agents-ia.mp4",
+      "poster": "assets/posters/agents-ia.webp",
+      "posterSmall": "assets/posters/agents-ia-small.webp",
+      "captions": "media/agents-ia.vtt",
+      "sources": "sources/agents-ia.html"
+    },
+    {
+      "id": "hermes",
+      "title": "Hermes plaide sa cause.",
+      "category": "Outils IA",
+      "color": "#ff9c67",
+      "teaser": "Un plaidoyer pas très sage pour un outil très sérieux.",
+      "description": "Un film publicitaire au ton d’avocat télé rétro pour découvrir Hermes, ses outils, sa mémoire et ses possibilités. Une mise en scène originale pour explorer un agent qui passe à l’action.",
+      "posterAlt": "Affiche rétro du film Hermes, au style de publicité d’avocat.",
+      "duration": 91.866667,
+      "durationLabel": "1:32",
+      "dateLabel": "7 octobre 2026",
+      "video": "media/hermes.mp4",
+      "poster": "assets/posters/hermes.webp",
+      "posterSmall": "assets/posters/hermes-small.webp",
+      "captions": "media/hermes.vtt",
+      "sources": "sources/hermes.html"
+    },
+    {
+      "id": "blockchain",
+      "title": "La blockchain, décryptée.",
+      "category": "Tech & concepts",
+      "color": "#d9ef61",
+      "teaser": "Des blocs, des preuves et beaucoup moins de mystère.",
+      "description": "Registre partagé, signatures, empreintes, consensus et smart contracts : un voyage visuel pour comprendre comment une blockchain fonctionne, et ce qu’elle ne garantit pas.",
+      "posterAlt": "Affiche du film blockchain, trois blocs reliés sur un fond sombre.",
+      "duration": 71.216667,
+      "durationLabel": "1:11",
+      "dateLabel": "7 octobre 2026",
+      "video": "media/blockchain.mp4",
+      "poster": "assets/posters/blockchain.webp",
+      "posterSmall": "assets/posters/blockchain-small.webp",
+      "captions": "media/blockchain.vtt",
+      "sources": "sources/blockchain.html"
+    },
+    {
+      "id": "lycees",
+      "title": "Lycées : comprendre la colère.",
+      "category": "Actualité",
+      "color": "#a5cde9",
+      "teaser": "Les faits, les revendications, un grille-pain très bavard.",
+      "description": "Le point au 7 octobre 2026 : revendications, mobilisation, violences documentées, maintien de l’ordre et réponses annoncées. Des sources attribuées et une dose d’autodérision dirigée vers l’IA.",
+      "posterAlt": "Affiche bleue du film Lycées, la colère, les faits, édition du 7 octobre 2026.",
+      "datedNews": true,
+      "duration": 93.3,
+      "durationLabel": "1:33",
+      "dateLabel": "7 octobre 2026",
+      "video": "media/lycees.mp4",
+      "poster": "assets/posters/lycees.webp",
+      "posterSmall": "assets/posters/lycees-small.webp",
+      "captions": "media/lycees.vtt",
+      "sources": "sources/lycees.html"
+    }
+  ]
+}

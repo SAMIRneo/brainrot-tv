@@ -17,11 +17,17 @@
     <a class="nav-link" href="#films">Les vidéos <span id="header-count">05</span></a>
   </header>
   <main class="wrap">
+    <div class="opening">
     <section class="intro" aria-labelledby="intro-title">
       <div class="intro-copy"><p class="eyebrow">LE CLUB DES CERVEAUX CURIEUX / VOL. 01</p><h1 id="intro-title">DU FOND.<br><span class="outline">DU FUN.</span> <span class="squiggle">DU FILM.</span></h1><p class="lede">IA, tech, outils & actualité.<br>Des films courts. Des idées qui restent.</p><a class="browse-button" href="#films">Trouve ton prochain déclic <span id="hero-count">05</span></a></div>
-      <div class="promo-feature"><span class="promo-label">LA BANDE-ANNONCE</span><a id="watch-promo" class="promo-poster" data-video-id="brainrot-tv-promo" href="media/brainrot-tv-promo.mp4" aria-label="Regarder le spot BRAINROT TV de 14 secondes"><div class="promo-art" aria-hidden="true"><span class="orbit"></span><span class="promo-word">BRAIN<br>ROT<span>TV.</span></span><span class="promo-spark">✳</span></div><span class="promo-bottom"><span>Le manifeste.<small>14 secondes pour se rencontrer.</small></span><span class="promo-play" aria-hidden="true">▶</span></span></a></div>
       <div class="intro-bottom"><span>UN PEU PLUS SMART. UN PEU MOINS SAGE.</span><span>5 VIDÉOS / 0 PRISE DE TÊTE</span></div>
     </section>
+    <aside class="promo-widget" aria-labelledby="promo-widget-title">
+      <div class="widget-header"><div><p class="section-kicker">LA BANDE-ANNONCE</p><h2 id="promo-widget-title">Le manifeste.</h2></div><span class="widget-duration">0:14</span></div>
+      <div class="widget-screen"><img id="widget-cover" src="assets/posters/brainrot-tv-promo.webp" width="720" height="1280" alt="BRAINROT TV, la bande-annonce" fetchpriority="high"><video id="promo-inline" hidden controls playsinline preload="none" poster="assets/posters/brainrot-tv-promo.webp" data-src="media/brainrot-tv-promo.mp4" aria-label="Bande-annonce BRAINROT TV, 14 secondes"><track kind="subtitles" src="media/brainrot-tv-promo.vtt" srclang="fr" label="Français"></video></div>
+      <div class="widget-footer"><p>14 secondes pour se rencontrer.</p><button id="widget-play" class="widget-play" hidden><span aria-hidden="true">▶</span><span id="widget-play-label">Lire la vidéo</span></button><noscript><p><a href="media/brainrot-tv-promo.mp4">Lire la bande-annonce</a></p></noscript><p id="widget-error" hidden>La lecture ne démarre pas. <a href="media/brainrot-tv-promo.mp4">Ouvrir le MP4</a>.</p></div>
+    </aside>
+    </div>
     <section id="films" class="library" aria-labelledby="library-title">
       <div class="section-bar"><div><p class="section-kicker">CHOISIS TON DÉCLIC</p><h2 id="library-title">La collection<span id="film-count" class="count">05</span></h2></div><p id="library-stats">5 vidéos · 5 min 35 de curiosité</p></div>
       <div id="video-grid" class="video-grid" aria-live="polite" aria-busy="true"><p class="catalog-loading">Les films arrivent…</p></div>

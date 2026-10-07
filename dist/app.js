@@ -4,6 +4,22 @@ const dialog = document.querySelector('#player-dialog');
 const player = document.querySelector('#player');
 const captionTrack = document.querySelector('#caption-track');
 const nextButton = document.querySelector('#next-film');
+const promoInline = document.querySelector('#promo-inline');
+const widgetPlay = document.querySelector('#widget-play');
+widgetPlay.hidden = false;
+const updateWidget = () => {
+  document.querySelector('#widget-play-label').textContent = promoInline.ended ? 'Revoir la vidéo' : promoInline.paused ? 'Lire la vidéo' : 'Mettre en pause';
+  widgetPlay.querySelector('[aria-hidden]').textContent = promoInline.paused ? '▶' : 'Ⅱ';
+};
+widgetPlay.addEventListener('click', () => {
+  if (promoInline.paused) {
+    if (!promoInline.getAttribute('src')) { promoInline.src = promoInline.dataset.src; promoInline.load(); promoInline.hidden = false; document.querySelector('#widget-cover').hidden = true; }
+    if (promoInline.ended) promoInline.currentTime = 0; promoInline.play().catch(() => { document.querySelector('#widget-error').hidden = false; }); }
+  else promoInline.pause();
+});
+for (const event of ['play','pause','ended']) promoInline.addEventListener(event,updateWidget);
+promoInline.addEventListener('play', () => { document.querySelector('#widget-error').hidden = true; player.pause(); });
+promoInline.addEventListener('error', () => { document.querySelector('#widget-error').hidden = false; });
 let films = [], returnFocus, currentIndex = -1;
 const escapeHTML = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const editorial = {
@@ -28,7 +44,7 @@ function openFilm(film, trigger) {
   if (!film) return;
   if (trigger) returnFocus = trigger;
   currentIndex = films.findIndex(item => item.id === film.id);
-  player.pause();
+  player.pause(); promoInline.pause();
   document.querySelector('#player-title').textContent = film.title;
   document.querySelector('#player-index').textContent = `LA COLLECTION / ${String(currentIndex+1).padStart(2,'0')} SUR ${String(films.length).padStart(2,'0')}`;
   document.querySelector('#player-category').textContent = film.category;
@@ -68,9 +84,7 @@ fetch('videos.json').then(response => {
     return `<article class="video-card" data-id="${escapeHTML(film.id)}" style="--accent:${escapeHTML(film.color)}" aria-labelledby="title-${escapeHTML(film.id)}"><div class="card-stage"><button class="poster-button" data-film="${index}" aria-label="Regarder ${escapeHTML(film.title)}"><img src="${escapeHTML(film.poster)}" srcset="${escapeHTML(film.posterSmall)} 360w, ${escapeHTML(film.poster)} 720w" sizes="(max-width:760px) 140px, 180px" width="720" height="1280" alt="${escapeHTML(film.posterAlt)}" loading="${index < 2 ? 'eager' : 'lazy'}" decoding="async"><span class="poster-duration">${escapeHTML(film.durationLabel)}</span><span class="poster-play" aria-hidden="true">▶</span></button></div><div class="card-content"><div class="card-top"><span class="category">${escapeHTML(info.label)}</span><span class="card-number">VOL. ${String(index+1).padStart(2,'0')}</span></div><h3 class="card-title" id="title-${escapeHTML(film.id)}"><button class="title-button" data-film="${index}">${escapeHTML(film.title)}</button></h3><p class="card-description">${escapeHTML(film.teaser)}</p><div class="card-topics">${info.topics.map(topic=>`<span>${escapeHTML(topic)}</span>`).join('')}</div><div class="card-action"><button class="watch-button" data-film="${index}" aria-label="Lancer ${escapeHTML(film.title)}"><span aria-hidden="true">▶</span> Regarder <span>${escapeHTML(film.durationLabel)}</span></button><span class="card-format">${escapeHTML(film.format || 'FILM VERTICAL')}</span></div></div></article>`;
   }).join('');
   grid.setAttribute('aria-busy','false');
-  const promoButton = document.querySelector('#watch-promo');
-  const promo = films.find(film => film.id === promoButton.dataset.videoId);
-  if (promo) promoButton.addEventListener('click', event => {event.preventDefault();openFilm(promo,promoButton);});
+
 }).catch(() => {
   grid.setAttribute('aria-busy','false');
   grid.innerHTML = '<p>Le catalogue ne se charge pas. <a href="./">Réessayer</a> ou ouvrir un film directement : <a href="media/agents-ia.mp4">Agents IA</a>, <a href="media/hermes.mp4">Hermes</a>, <a href="media/blockchain.mp4">Blockchain</a>, <a href="media/lycees.mp4">Lycées</a>, <a href="media/brainrot-tv-promo.mp4">Le spot</a>.</p>';

@@ -7,7 +7,7 @@
   <meta name="description" content="IA, blockchain, outils et actualité : nos films courts, nos grandes questions et une dose d’autodérision. La vidéothèque BRAINROT TV.">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/space.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="upgrade.css"><script src="app.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#films">Passer aux vidéos</a>
@@ -17,9 +17,10 @@
   </header>
   <main class="wrap">
     <section class="intro" aria-labelledby="intro-title">
-      <div><p class="eyebrow"><span class="live-dot"></span> LA CURIOSITÉ A SA CHAÎNE.</p><h1 id="intro-title">Du fond.<br class="mobile-break"> <span class="outline">Du fun.</span> <span class="squiggle">Du film.</span></h1><p class="lede">Des sujets sérieux. Un cerveau pas toujours sage.<br>Nos vidéos pour comprendre sans piquer du nez.</p></div>
-      <div class="sticker" aria-label="100 pour cent curiosité"><span>100%</span><small>CURIOSITÉ</small><i aria-hidden="true">✳</i></div>
+      <div><p class="eyebrow"><span class="live-dot"></span> LE CLUB DES CERVEAUX CURIEUX.</p><h1 id="intro-title">DU FOND.<br><span class="outline">DU FUN.</span> <span class="squiggle">DU FILM.</span></h1><p class="lede">IA, tech, outils & actualité.<br>Appuie sur play. Fais chauffer les neurones.</p></div>
+      <div class="sticker"><span id="hero-count">04</span><small>FILMS À<br>L’AFFICHE</small><i aria-hidden="true">✳</i></div>
     </section>
+    <div class="topic-rail" aria-label="Les sujets de la vidéothèque"><span>IA</span><b aria-hidden="true">✳</b><span>OUTILS</span><b aria-hidden="true">✳</b><span>TECH</span><b aria-hidden="true">✳</b><span>LE MONDE</span><b aria-hidden="true">↘</b></div>
     <section id="films" class="library" aria-labelledby="library-title">
       <div class="section-bar"><h2 id="library-title">À l’affiche <span id="film-count" class="count">04</span></h2><p id="library-stats">4 films · 5 min 21 de curiosité</p></div>
       <div id="video-grid" class="video-grid" aria-live="polite"></div>

@@ -1,6 +1,6 @@
 # BRAINROT TV
 
-La vidéothèque de Samir : quatre films courts sur l’IA, les outils, la blockchain et l’actualité. Site statique, mobile, léger, sans dépendance au runtime.
+La vidéothèque de Samir : six vidéos courtes sur l’IA, les outils, la blockchain et l’actualité. Site statique, mobile, léger, sans dépendance au runtime.
 
 ## Ouvrir en local
 

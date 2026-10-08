@@ -1,0 +1,5 @@
+from pathlib import Path
+P=Path(__file__).resolve().parents[1]
+p=P/'dist/app.js';s=p.read_text(encoding='utf-8').replace('POUR COMMENCER','LE NOUVEAU FILM').replace('sizes="(max-width:760px) 230px, 280px"','sizes="(max-width:760px) 100vw, 50vw"').replace('sizes="(max-width:760px) 100vw, 50vw"', 'sizes="${index === 0 ? \'(max-width:760px) 100vw, 50vw\' : \'(max-width:760px) 35vw, 33vw\'}"');p.write_text(s,encoding='utf-8')
+p=P/'dist/index.html';s=p.read_text(encoding='utf-8').replace('#19191d','#101116').replace('>05<','>06<').replace('5 VIDÉOS','6 VIDÉOS').replace('5 vidéos · 5 min 35','6 vidéos · 6 min 24').replace('LE CLUB DES CERVEAUX CURIEUX / VOL. 01','LE CLUB DES CERVEAUX CURIEUX').replace('Le feed<span','À l’affiche<span').replace('>À REGARDER MAINTENANT<','>LA SÉLECTION<').replace('<li><a href="media/agents-ia.mp4">','<li><a href="media/attention.mp4">Ton attention est à vendre</a></li><li><a href="media/agents-ia.mp4">');p.write_text(s,encoding='utf-8')
+p=P/'README.md';s=p.read_text(encoding='utf-8').replace('quatre films courts','six vidéos courtes');p.write_text(s,encoding='utf-8')

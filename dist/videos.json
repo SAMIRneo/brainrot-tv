@@ -1,6 +1,25 @@
 {
   "videos": [
     {
+      "id": "attention",
+      "title": "Ton attention est à vendre.",
+      "category": "Culture numérique",
+      "color": "#dfff00",
+      "teaser": "Un commissaire-priseur, des applis et ton petit coup d’œil de vingt minutes.",
+      "description": "Une vente aux enchères absurde pour comprendre l’économie de l’attention, la publicité et le ciblage. Six images originales, trois voix françaises et une invitation à reprendre la main. La scène d’enchères est une fiction : on ne vend pas ton cerveau.",
+      "posterAlt": "Un commissaire-priseur en costume violet dans une salle d’enchères, téléphone exposé sous verre.",
+      "duration": 49.183333,
+      "durationLabel": "0:49",
+      "dateLabel": "8 octobre 2026",
+      "video": "media/attention.mp4",
+      "poster": "assets/posters/attention.webp",
+      "posterSmall": "assets/posters/attention-small.webp",
+      "captions": "media/attention.vtt",
+      "sources": "sources/attention.html",
+      "format": "FICTION + DÉCRYPTAGE",
+      "featured": true
+    },
+    {
       "id": "agents-ia",
       "title": "Les agents IA, sans le blabla.",
       "category": "Intelligence artificielle",
